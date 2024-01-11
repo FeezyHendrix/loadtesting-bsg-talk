@@ -1,0 +1,19 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Load Testing Talk Repo",
+  "main": "index.js",
+  "repository": "https://github.com/FeezyHendrix/loadtesting-bsg-talk.git",
+  "author": "FeezyHendrix",
+  "license": "MIT",
+  "private": null,
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "dependencies": {
+    "mongoose": "^8.0.4"
+  }
+}
