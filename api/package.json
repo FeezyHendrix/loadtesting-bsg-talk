@@ -7,6 +7,7 @@
   "author": "FeezyHendrix",
   "license": "MIT",
   "private": null,
+  "type": "module",
   "scripts": {
     "start": "nodemon index.js"
   },
@@ -14,6 +15,8 @@
     "nodemon": "^3.0.2"
   },
   "dependencies": {
+    "date-fns": "^3.2.0",
+    "dotenv": "^16.3.1",
     "mongoose": "^8.0.4"
   }
 }

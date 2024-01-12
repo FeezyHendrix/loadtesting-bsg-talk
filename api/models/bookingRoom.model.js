@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
 
 const bookingsRoomSchema = new mongoose.Schema(
   {
@@ -8,11 +8,6 @@ const bookingsRoomSchema = new mongoose.Schema(
     isAvailable: {
       type: Boolean,
       default: true,
-    },
-    accessLevel: {
-      type: mongoose.Types.ObjectId,
-      required: true,
-      ref: 'accesslevel',
     },
     description: {
       type: String,
