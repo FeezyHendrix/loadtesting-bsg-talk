@@ -99,8 +99,6 @@ export const fetchTimeForDayService = async (date, month, roomId) => {
   let startTime = new Date(bookingsRoom.openHour);
   const endTime = new Date(bookingsRoom.closedHour);
 
-  console.log(startTime, endTime);
-
   /**
    * Check if there is actually a booking for the day
    * before running loop
@@ -155,7 +153,6 @@ export const fetchTimeForDayService = async (date, month, roomId) => {
         startTime = addHours(startTime, bookingsRoom.frequency.timeCount);
       }
     } else {
-      console.log("HERE 2");
       /**
        * If the bookings is empty and all timeslots are free
        */

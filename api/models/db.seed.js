@@ -39,9 +39,13 @@ function seedBookingRooms() {
 
 export async function fireSeeder() {
   /// Delete existing data to not create confusion
+
+  const bookingRoomCount = await BookingRoomModel.countDocuments();
+
+  // Already seeded
+  if (bookingRoomCount > 0) return;
+
   await BookingModel.deleteMany();
   await BookingRoomModel.deleteMany();
-
-
   seedBookingRooms();
 }

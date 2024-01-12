@@ -33,7 +33,7 @@ server.listen(process.env.PORT, () => {
       useUnifiedTopology: true,
     })
     .then(() => {
-      // fireSeeder();
+      fireSeeder();
       console.log(`=================================`);
       console.log(`======= ENV: ${process.env.NODE_ENV} =======`);
       console.log(`🚀 App listening on the port ${process.env.PORT}`);
