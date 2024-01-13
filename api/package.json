@@ -9,7 +9,8 @@
   "private": null,
   "type": "module",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "start:cluster": "nodemon index.cluster.js"
   },
   "devDependencies": {
     "nodemon": "^3.0.2"
